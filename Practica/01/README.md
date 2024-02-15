@@ -66,6 +66,13 @@ Un multiplexor, comúnmente abreviado como "Mux", es un dispositivo que tiene do
 
 Los demultiplexores realizan la función opuesta a la del multiplexor. Toman una señal de entrada única y la dirigen hacia uno de los N canales de salida. El selector elige el canal de salida por el cual se enviará la señal de entrada.
 
+| Selector | Entrada | Salida 0 | Salida 1 |
+|:--------:|:-------:|:--------:|:--------:|
+|     0    |    0    |    0     |    0     |
+|     0    |    1    |    1     |    0     |
+|     1    |    0    |    0     |    0     |
+|     1    |    1    |    0     |    1     |
+
 # NOT16
 
 
