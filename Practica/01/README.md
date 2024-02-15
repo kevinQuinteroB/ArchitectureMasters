@@ -58,8 +58,8 @@ Un multiplexor, comúnmente abreviado como "Mux", es un dispositivo que tiene do
 |     0    |     1     |     0     |    1   |
 |     0    |     1     |     1     |    1   |
 |     1    |     0     |     0     |    0   |
-|     1    |     0     |     1     |    1   |
-|     1    |     1     |     0     |    0   |
+|     1    |     0     |     1     |    0   |
+|     1    |     1     |     0     |    1   |
 |     1    |     1     |     1     |    1   |
 
 # DMUX
@@ -104,11 +104,29 @@ En esencia, se utiliza un multiplexor con 4 opciones de entrada, y este mismo pr
 
 La implementación se basa en un concepto similar al utilizado en el Mux4Way16, pero en este caso, el problema se presenta de manera inversa.D
 
+| Selector 1 | Selector 0 | Salida 0 |
+|:--------:|:-------:|:--------:|
+|     0    |    0    |    a     |  
+|     0    |    1    |    b     |  
+|     1    |    0    |    c     |    
+|     1    |    1    |    d     | 
+
 # DMUX8WAY
 
 
 Al igual que en la implementación del Mux8Way16, se optó por utilizar dos demultiplexores de 4 vías (DMux4Way), un demultiplexor de 16 vías (DMux16) y una compuerta XOR de 3 entradas para controlar el selector
 
+
+| Selector 2 | Selector 1 | Selector 0 | Salida 1 |
+|:--------:|:-------:|:--------:|:--------:|
+|     0    |    0    |    0     |    a     |
+|     0    |    0    |    1     |    b     |
+|     0    |    1    |    0     |    c     |
+|     0    |    1    |    1     |    d     |
+|     1    |    0    |    0     |    e     |
+|     1    |    0    |    1     |    f     |
+|     1    |    1    |    0     |    g     |
+|     1    |    1    |    1     |    h     |
 
 Preguntas adicionales:
 ¿Que consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?
