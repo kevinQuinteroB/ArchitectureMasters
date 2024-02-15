@@ -11,3 +11,56 @@ Una vez que tenemos el entorno preparado, comenzamos a diseñar nuestras compuer
 La compuerta AND, también llamada "todo o nada", se representa en el álgebra Booleana mediante una operación de multiplicación. Esto significa que para que la salida de la compuerta sea activa, todas sus entradas deben estar en estado binario 1. Si alguna entrada está inactiva (en estado "0"), la salida será 0.
 
 # NOT
+El resultado de una compuerta NOT será 1 si su entrada es 0, y será 0 si su entrada es 1. La siguiente figura interactiva presenta un diagrama de una compuerta NOT junto con su tabla de verdad correspondiente.
+
+# OR
+
+Esta compuerta, conocida como OR, activa su salida a un estado 1 si alguna de sus entradas está en estado binario 1. No todas las entradas necesitan estar activadas para que la salida sea 1, pero tampoco hay ningún problema si lo están.
+
+# XOR
+
+La compuerta XOR, también llamada OR exclusiva, es una puerta lógica digital que implementa la operación de o exclusivo. Esto significa que la salida será verdadera (1/ALTO) únicamente si una y solo una de las entradas de la puerta es verdadera. Si ambas entradas son falsas (0/BAJO) o ambas son verdaderas, la salida será falsa.
+
+# MUX
+
+Un multiplexor, comúnmente abreviado como "Mux", es un dispositivo que tiene dos entradas de datos y una entrada de selector. Cuando el selector está en 0, el multiplexor devuelve la información proveniente de la primera entrada de datos. Por otro lado, cuando el selector es 1, el multiplexor devuelve la información proveniente de la segunda entrada de datos. Esta funcionalidad es esencial ya que permite a la computadora seleccionar entre dos valores posibles.
+
+# DMUX
+
+Los demultiplexores realizan la función opuesta a la del multiplexor. Toman una señal de entrada única y la dirigen hacia uno de los N canales de salida. El selector elige el canal de salida por el cual se enviará la señal de entrada.
+
+# NOT16
+
+
+Lo que estás describiendo es un inversor de 16 bits, que es simplemente un circuito que toma una señal de entrada y la invierte, es decir, si la entrada es 0, la salida será 1, y viceversa. Este inversor se implementa 16 veces para manejar un bus de 16 bits. Cada uno de los inversores en esta implementación invertirá la señal de entrada individualmente.
+
+# AND16
+
+
+Se utiliza una compuerta AND en 16 instancias, es decir, se repite el proceso de implementar la compuerta AND 16 veces.
+
+# OR16
+
+
+De igual manera, se emplea la operación lógica OR en 16 ocasiones para formar la compuerta Or16.
+
+# MUX16
+
+Así mismo, se repite el proceso del multiplexor en 16 ocasiones.
+
+# OR8WAY
+
+La compuerta Or8Way tiene 8 entradas y produce una única salida.
+
+# MUX4WAY16
+
+En esencia, se utiliza un multiplexor con 4 opciones de entrada, y este mismo proceso se repite 16 veces en total.
+
+#DMUX4WAY
+
+La implementación se basa en un concepto similar al utilizado en el Mux4Way16, pero en este caso, el problema se presenta de manera inversa.D
+
+#DMUX8WAY
+
+
+Al igual que en la implementación del Mux8Way16, se optó por utilizar dos demultiplexores de 4 vías (DMux4Way), un demultiplexor de 16 vías (DMux16) y una compuerta XOR de 3 entradas para controlar el selector
