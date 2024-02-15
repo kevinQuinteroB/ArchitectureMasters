@@ -56,11 +56,11 @@ La compuerta Or8Way tiene 8 entradas y produce una única salida.
 
 En esencia, se utiliza un multiplexor con 4 opciones de entrada, y este mismo proceso se repite 16 veces en total.
 
-#DMUX4WAY
+# DMUX4WAY
 
 La implementación se basa en un concepto similar al utilizado en el Mux4Way16, pero en este caso, el problema se presenta de manera inversa.D
 
-#DMUX8WAY
+# DMUX8WAY
 
 
 Al igual que en la implementación del Mux8Way16, se optó por utilizar dos demultiplexores de 4 vías (DMux4Way), un demultiplexor de 16 vías (DMux16) y una compuerta XOR de 3 entradas para controlar el selector
