@@ -64,3 +64,16 @@ La implementación se basa en un concepto similar al utilizado en el Mux4Way16, 
 
 
 Al igual que en la implementación del Mux8Way16, se optó por utilizar dos demultiplexores de 4 vías (DMux4Way), un demultiplexor de 16 vías (DMux16) y una compuerta XOR de 3 entradas para controlar el selector
+
+
+Preguntas adicionales:
+¿Que consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?
+
+Leer la documentación, tener conceptos básicos de electrónica y entender la sintaxis de programación que se utiliza en Nand2Tetris 
+
+
+¿Qué otras herramientas similares a Nand2Tetris existen? (De mínimo dos ejemplos)
+
+ Raspberry Pi: Hay una amplia variedad de cursos en línea y recursos disponibles para aprender a programar, crear proyectos de electrónica y explorar la informática.
+
+Hackaday: Es una plataforma en línea que sirve como comunidad y recurso para entusiastas de la electrónica, ingenieros, hackers y makers. Hackaday proporciona noticias, artículos, proyectos, tutoriales y eventos relacionados con la tecnología, la electrónica y la informática.
