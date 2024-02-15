@@ -10,6 +10,13 @@ Una vez que tenemos el entorno preparado, comenzamos a diseñar nuestras compuer
 
 La compuerta AND, también llamada "todo o nada", se representa en el álgebra Booleana mediante una operación de multiplicación. Esto significa que para que la salida de la compuerta sea activa, todas sus entradas deben estar en estado binario 1. Si alguna entrada está inactiva (en estado "0"), la salida será 0.
 
+| Entrada A | Entrada B | Salida |
+|:---------:|:---------:|:------:|
+|     0     |     0     |    0   |
+|     0     |     1     |    0   |
+|     1     |     0     |    0   |
+|     1     |     1     |    1   |
+
 # NOT
 El resultado de una compuerta NOT será 1 si su entrada es 0, y será 0 si su entrada es 1. La siguiente figura interactiva presenta un diagrama de una compuerta NOT junto con su tabla de verdad correspondiente.
 
