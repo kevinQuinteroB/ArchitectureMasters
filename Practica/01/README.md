@@ -29,13 +29,38 @@ El resultado de una compuerta NOT será 1 si su entrada es 0, y será 0 si su en
 
 Esta compuerta, conocida como OR, activa su salida a un estado 1 si alguna de sus entradas está en estado binario 1. No todas las entradas necesitan estar activadas para que la salida sea 1, pero tampoco hay ningún problema si lo están.
 
+| Entrada A | Entrada B | Salida |
+|:---------:|:---------:|:------:|
+|     0     |     0     |    0   |
+|     0     |     1     |    1   |
+|     1     |     0     |    1   |
+|     1     |     1     |    1   |
+
 # XOR
 
 La compuerta XOR, también llamada OR exclusiva, es una puerta lógica digital que implementa la operación de o exclusivo. Esto significa que la salida será verdadera (1/ALTO) únicamente si una y solo una de las entradas de la puerta es verdadera. Si ambas entradas son falsas (0/BAJO) o ambas son verdaderas, la salida será falsa.
 
+| Entrada A | Entrada B | Salida |
+|:---------:|:---------:|:------:|
+|     0     |     0     |    0   |
+|     0     |     1     |    1   |
+|     1     |     0     |    1   |
+|     1     |     1     |    0   |
+
 # MUX
 
 Un multiplexor, comúnmente abreviado como "Mux", es un dispositivo que tiene dos entradas de datos y una entrada de selector. Cuando el selector está en 0, el multiplexor devuelve la información proveniente de la primera entrada de datos. Por otro lado, cuando el selector es 1, el multiplexor devuelve la información proveniente de la segunda entrada de datos. Esta funcionalidad es esencial ya que permite a la computadora seleccionar entre dos valores posibles.
+
+| Selector | Entrada 0 | Entrada 1 | Salida |
+|:--------:|:---------:|:---------:|:------:|
+|     0    |     0     |     0     |    0   |
+|     0    |     0     |     1     |    0   |
+|     0    |     1     |     0     |    1   |
+|     0    |     1     |     1     |    1   |
+|     1    |     0     |     0     |    0   |
+|     1    |     0     |     1     |    1   |
+|     1    |     1     |     0     |    0   |
+|     1    |     1     |     1     |    1   |
 
 # DMUX
 
