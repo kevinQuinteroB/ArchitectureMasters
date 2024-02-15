@@ -20,6 +20,11 @@ La compuerta AND, también llamada "todo o nada", se representa en el álgebra B
 # NOT
 El resultado de una compuerta NOT será 1 si su entrada es 0, y será 0 si su entrada es 1. La siguiente figura interactiva presenta un diagrama de una compuerta NOT junto con su tabla de verdad correspondiente.
 
+| Entrada | Salida |
+|:-------:|:------:|
+|    0    |    1   |
+|    1    |    0   |
+
 # OR
 
 Esta compuerta, conocida como OR, activa su salida a un estado 1 si alguna de sus entradas está en estado binario 1. No todas las entradas necesitan estar activadas para que la salida sea 1, pero tampoco hay ningún problema si lo están.
